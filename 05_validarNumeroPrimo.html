@@ -7,10 +7,23 @@
 
     //ENTRADA
 
+    const numeroPrimo = parseInt(prompt("informe um número"));
+    let listaImpares = [];
 
     //PROCESSAMENTO
 
+    for(let contador = 1; contador <= numeroPrimo; contador++) {
+        if(numeroPrimo % contador === 0) {
+            listaImpares.push(numeroPrimo);
+        }
+    }
 
     //SAÍDA
+
+    if (listaImpares.length === 2) {
+        document.write(`o número ${numeroPrimo} é um número primo`);
+    } else {
+        document.write(`o número ${numeroPrimo} não é um número primo`);
+    }
 
 </script>

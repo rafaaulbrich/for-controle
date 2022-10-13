@@ -10,7 +10,17 @@
 
     //PROCESSAMENTO
 
+    let somaNumeros = 0;
+
+    for(let contador = 1; contador <= 5; contador++) {
+        let numeros = parseInt(prompt("informe 5 números"));
+        somaNumeros = somaNumeros + numeros;
+    }
+
+    let media = somaNumeros / 5;
 
     //SAÍDA
+
+    document.write(`a soma de números é ${somaNumeros} e a média deles é ${media}`);
 
 </script>

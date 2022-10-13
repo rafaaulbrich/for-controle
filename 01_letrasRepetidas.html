@@ -16,8 +16,11 @@
 
     //PROCESSAMENTO
 
-    for(let contador = 0; contador <= listaDeNumeros; contador++) {
-        
+    for(let contador = 0; contador <= listaDeNumeros.length - 1; contador++) {
+        let elemento = listaDeNumeros[contador].toLowerCase();
+        if(letrasMinusculas. indexOf(elemento) === -1) {
+            letrasMinusculas.push(elemento);
+        }
     }
 
     //SAÍDA
