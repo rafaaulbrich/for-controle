@@ -10,9 +10,17 @@
 
     //ENTRADA
 
-
     //PROCESSAMENTO
 
+    let votantes = Number(prompt("qual é a quantidade de alunos votantes?"));
+    let votos = 0;
+
+    for(contador = 1; contador <= 3; contador++) {
+        let candidados = prompt("informe o nome dos candidados a representante");
+        votos = votos + votantes;
+        let porcentagem = votos + (votos + votantes) / votos;
+        document.write(`o total de votos para ${candidados} é de ${votos}, com ${porcentagem.toFixed(2)}% de votos</br>`);
+    }
 
     //SAÍDA
 
