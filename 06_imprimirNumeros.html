@@ -15,13 +15,20 @@
 
     //PROCESSAMENTO
 
-    if (numeroInicial < numeroFinal) {
-        for (contador = 1; contador ; contador++) {
-            
+    if(numeroFinal <= numeroInicial) {
+        document.write("o número inicial precisa ser menor que o número final");
+    } else {
+        let numerosImpares = [];
+        let numerosPares = [];
+        for(let contador = numeroInicial; contador <= numeroFinal; contador++) {
+            if(contador % 2 === 0) {
+                numerosPares.push(contador);
+            } else{
+                numerosImpares.push(contador);
+            }
         }
-    }
-    else {
-
+        document.write(`números pares: ${numerosPares.join(", ")}</br>`);
+        document.write(`números impares: ${numerosImpares.join(", ")}`);
     }
 
     //SAÍDA

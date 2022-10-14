@@ -8,8 +8,26 @@
 
     //ENTRADA
 
+    let habitantes = 50000;
+    let crescimento = 0.015;
+    let previsao5 = 0;
+    let previsao10 = 0;
+
     //PROCESSAMENTO
 
+    for(ano = 0; ano <= 10; ano++){
+        habitantes = habitantes + (habitantes * crescimento);
+        if (ano === 5) {
+            previsao5 = habitantes;
+        }
+        if (ano === 10) {
+            previsao10 = habitantes;
+        }
+    }
+    
     //SAÍDA
+
+    document.write(`os habitantes daqui 5 anos vai ser de: ${previsao5.toFixed(0)} pessoas</br>`);
+    document.write(`os habitantes daqui 10 anos vai ser de: ${previsao10.toFixed(0)} pessoas`);
 
 </script>

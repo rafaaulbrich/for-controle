@@ -6,10 +6,22 @@
     anos serão necessários para que o número de habitandes atinja 200000 habitantes.
     */
 
-    //ENTRADA    
+    //ENTRADA  
+    
+    let habitantes = 80000;
+    let habitantesAtingir = 200000;
+    const taxa = 0.03;
 
     //PROCESSAMENTO
 
+    let anos = 0;
+
+    for(anos = 0; habitantes <= habitantesAtingir; anos++) {
+        habitantes = habitantes + (habitantes * taxa);
+    }
+
     //SAÍDA
+
+    document.write(`serão necessários ${anos} anos.`);
 
 </script>
